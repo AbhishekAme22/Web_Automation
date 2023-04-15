@@ -1,0 +1,75 @@
+
+
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>WEBMIND</title>
+    <link rel="stylesheet" type="text/css" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://code.jquery.com/jquery-3.6.4.js" integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+  </head>
+  <body>
+    <style>.container {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    input[type=text] {
+      position: relative;
+      padding: 15px 40px 15px 20px;
+      width: 80px;
+      color: #525252;
+      text-transform: uppercase;
+      font-size: 16px;
+      font-weight: 100;
+      letter-spacing: 2px;
+      border: none;
+      border-radius: 5px;
+      background: linear-gradient(to right, #FFFFFF 0%, #464747 #F9F9F9 100%);
+      transition: width 0.4s ease;
+      outline: none;
+    }
+    input[type=text]:focus {
+      width: 300px;
+    }
+    
+    i {
+      position: relative;
+      left: -37px;
+      color: #8233C5;
+    } </style>
+    
+    <div class="background"></div>
+    <div class="title">
+     
+      <h3>INTRODUCING</h3>
+      <h2>WebMind</h2>
+      <h1>An Intelligent Browser Automation Solution</h1>
+      <br>
+      <div class="container">
+        <form id="myForm" method="POST" action="/submit-name">
+    
+        <input id="name" name="name" placeholder='Search...' class='js-search' type="text">
+        <i class="fa fa-search" id="searchIcon">  </i>
+          
+        
+      </form>
+      <script>const searchIcon = document.getElementById('searchIcon');
+        searchIcon.addEventListener('click', function() {
+          document.getElementById('myForm').submit();
+        });
+         </script>
+      </div>
+    </div>
+  
+  
+    
+  </body>
+</html>
